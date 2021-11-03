@@ -1847,7 +1847,7 @@ impl ElapsedQuery {
     pub fn get_result(&self) -> u64 {
         let mut time: GLuint64 = 0;
         assert!(self.gl_query != 0);
-        unsafe { glGetQueryObjectui64v(self.gl_query, GL_QUERY_RESULT, &mut time) };
+        //unsafe { glGetQueryObjectui64v(self.gl_query, GL_QUERY_RESULT, &mut time) };
         time
     }
 
